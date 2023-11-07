@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body background="./assets/img/background.jpeg">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section1">Página Inicial</a></li>
+                <li><a href="#section2">HTML</a></li>
+                <li><a href="#section3">CSS</a></li>
+                <li><a href="#section4">JavaScript</a></li>
+                <li><a href="#section5">PHP</a></li>
+                <li><a href="#section6">Localização</a></li>
+                <li>
+                    <button id="theme-toggle" class="tema" onclick="toggleTheme()">☀️Light - Dark🌙</button>
+                </li>
+            </ul>
+
+        </nav>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar na página">
+            <button id="search-button" onclick="searchPage()">Pesquisar</button>
+            <button id="next-occurrence-button" onclick="searchNextOccurrence()"><b>→</b></button>
+        </div>
+    </header>
+    <section>
+        <button id="back-to-top" onclick="scrollToTop()">Menu ⏫</button>
+    </section>
+    <section id="section1">
+        <div class="content">
+            <h2>Página Inicial</h2>
+            <p>Uma página inicial é a primeira página de um site e serve como ponto de entrada para os visitantes. Ela
+                normalmente inclui elementos como o logotipo, menu de navegação, chamadas à ação, imagens ou vídeos,
+                título principal, informações de contato, e muito mais.</p>
+            <div class="accordion">
+                <button class="accordion-button">Clareza e Simplicidade</button>
+                <div class="accordion-content">
+                    <p> A página inicial deve ser clara e concisa, transmitindo a mensagem central de forma direta e
+                        facilitando a navegação.</p>
+                </div>
+                <button class="accordion-button">Chamadas à Ação Eficazes</button>
+                <div class="accordion-content">
+                    <p>CTAs bem definidas incentivam os visitantes a tomar ações específicas, como comprar, inscrever-se
+                        ou entrar em contato..</p>
+                </div>
+                <button class="accordion-button">Responsividade</button>
+                <div class="accordion-content">
+                    <p>A página inicial deve ser projetada para funcionar bem em diferentes dispositivos, garantindo uma
+                        experiência consistente em computadores, tablets e smartphones.</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+                rerum, nulla porro ab facere excepturi sequi, in dolor
+                repudiandae repellendus optio deserunt facilis voluptatibus
+                eaque cum incidunt. Perferendis, deserunt iure!</p>
+            <div class="image-container">
+                <img src="./assets/img/img1.png" alt="Imagem 1">
+                <img src="./assets/img/img2.jpg" alt="Imagem 2">
+                <img src="./assets/img/img3.jpg" alt="Imagem 3">
+                <img src="./assets/img/img1.png" alt="Imagem 4">
+                <img src="./assets/img/img2.jpg" alt="Imagem 5">
+                <img src="./assets/img/img3.jpg" alt="Imagem 6">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="section2">
+        <div class="content">
+            <h2>HTML</h2>
+            <p>O HTML, ou Hypertext Markup Language, é a linguagem fundamental para a construção de páginas da web. Ele
+                fornece a estrutura e a organização necessárias para exibir informações na internet. O HTML usa tags e
+                elementos para definir o conteúdo e a formatação das páginas da web, permitindo que os navegadores
+                interpretem e apresentem informações de maneira coerente e acessível.</p>
+            <div class="accordion">
+                <button class="accordion-button">Estrutura Hierárquica</button>
+                <div class="accordion-content">
+                    <p>O HTML segue uma estrutura hierárquica na qual os elementos são aninhados uns nos outros. O
+                        elemento <html> é o contêiner principal e envolve todo o conteúdo da página. Dentro dele, o
+                        <b>"head"</b> contém metadados e configurações, enquanto o <b>"body"</b> contém o conteúdo
+                        visível.</p>
+                </div>
+                <button class="accordion-button">Semântica Significativa</button>
+                <div class="accordion-content">
+                    <p>Use elementos HTML de forma semântica, escolhendo tags que descrevam corretamente o conteúdo. Por
+                        exemplo, use <b>"h1"</b> a <b>"h6"</b> para cabeçalhos, <b>"p"</b> para parágrafos e <b>"a"</b>
+                        para links. Isso melhora a acessibilidade e a interpretação do conteúdo por motores de busca.
+                    </p>
+                </div>
+                <button class="accordion-button">Atributos e Estilo</button>
+                <div class="accordion-content">
+                    <p> Atributos são usados para fornecer informações adicionais aos elementos. O uso de estilos inline
+                        com o atributo "style" é possível, mas é geralmente aconselhável separar o estilo do conteúdo,
+                        usando CSS para formatação e aparência. Isso torna o código mais organizado e manutenível.</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic id
+                nobis quas dignissimos aliquam quasi dolor non fugiat, minus
+                libero consectetur, cupiditate alias iusto sequi repellat
+                accusantium fugit odio dolorem!</p>
+            <div class="image-container">
+                <img src="./assets/img/img1.png" alt="Imagem 1">
+                <img src="./assets/img/img2.jpg" alt="Imagem 2">
+                <img src="./assets/img/img3.jpg" alt="Imagem 3">
+                <img src="./assets/img/img1.png" alt="Imagem 4">
+                <img src="./assets/img/img2.jpg" alt="Imagem 5">
+                <img src="./assets/img/img3.jpg" alt="Imagem 6">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="section3">
+        <div class="content">
+            <h2>CSS</h2>
+            <p>O CSS (Cascading Style Sheets) é uma linguagem de estilo usada para controlar a apresentação visual de
+                páginas da web. Ele permite a formatação de elementos HTML, como cores, fontes, espaçamento e layout,
+                tornando o conteúdo mais atraente e organizado.</p>
+            <div class="accordion">
+                <button class="accordion-button">Seletor e Propriedades</button>
+                <div class="accordion-content">
+                    <p>Utilize seletor para direcionar os elementos HTML desejados e especifique propriedades de estilo,
+                        como cor de fundo ou tamanho de fonte, para criar a aparência desejada.</p>
+                </div>
+                <button class="accordion-button">Cascata e Especificidade</button>
+                <div class="accordion-content">
+                    <p>Compreenda como as regras de estilo se sobrepõem (cascata) e como a especificidade das regras
+                        afeta a prioridade das estilizações.</p>
+                </div>
+                <button class="accordion-button">Responsividade</button>
+                <div class="accordion-content">
+                    <p>Adapte o CSS para criar layouts responsivos que se ajustem a diferentes tamanhos de tela,
+                        garantindo uma boa experiência do usuário em dispositivos móveis e desktop.</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus minima
+                libero voluptate voluptas saepe earum molestias iusto,
+                ullam, enim vero dolore eaque modi iure, dolores aut
+                animi perspiciatis? Explicabo, quia.</p>
+            <div class="image-container">
+                <img src="./assets/img/img1.png" alt="Imagem 1">
+                <img src="./assets/img/img2.jpg" alt="Imagem 2">
+                <img src="./assets/img/img3.jpg" alt="Imagem 3">
+                <img src="./assets/img/img1.png" alt="Imagem 4">
+                <img src="./assets/img/img2.jpg" alt="Imagem 5">
+                <img src="./assets/img/img3.jpg" alt="Imagem 6">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="section4">
+        <div class="content">
+            <h2>JavasScript</h2>
+            <p>O JavaScript é uma linguagem de programação amplamente usada para adicionar interatividade e
+                funcionalidade dinâmica a páginas da web. Ele permite que os desenvolvedores criem recursos como
+                validação de formulários, animações e atualizações em tempo real.</p>
+            <div class="accordion">
+                <button class="accordion-button">Sintaxe e Estrutura</button>
+                <div class="accordion-content">
+                    <p>Familiarize-se com a sintaxe do JavaScript, incluindo variáveis, loops, condicionais e funções
+                        para criar código funcional.</p>
+                </div>
+                <button class="accordion-button">Manipulação do Documento</button>
+                <div class="accordion-content">
+                    <p>Acesse e modifique elementos HTML e CSS usando o Document Object Model (DOM) para criar
+                        interações com o usuário.</p>
+                </div>
+                <button class="accordion-button">Tratamento de Eventos</button>
+                <div class="accordion-content">
+                    <p>Aprenda como usar eventos para responder a ações do usuário, como cliques e teclas pressionadas,
+                        tornando a página mais dinâmica e responsiva.</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sequi vel optio quos, quis a cumque quibusdam enim
+                quas, consequuntur provident, praesentium illo ipsam.
+                Odit quisquam natus delectus quaerat
+                expedita eligendi.</p>
+            <div class="image-container">
+                <img src="./assets/img/img1.png" alt="Imagem 1">
+                <img src="./assets/img/img2.jpg" alt="Imagem 2">
+                <img src="./assets/img/img3.jpg" alt="Imagem 3">
+                <img src="./assets/img/img1.png" alt="Imagem 4">
+                <img src="./assets/img/img2.jpg" alt="Imagem 5">
+                <img src="./assets/img/img3.jpg" alt="Imagem 6">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="section5">
+        <div class="content">
+            <h2>PHP</h2>
+            <p>O PHP é uma linguagem de script do lado do servidor amplamente usada para desenvolver aplicativos da web
+                dinâmicos. Ele permite que os desenvolvedores processem formulários, acessem bancos de dados e crie
+                conteúdo personalizado.</p>
+            <div class="accordion">
+                <button class="accordion-button">Sintaxe e Estrutura</button>
+                <div class="accordion-content">
+                    <p>Familiarize-se com a sintaxe do JavaScript, incluindo variáveis, loops, condicionais e funções
+                        para criar código funcional.</p>
+                </div>
+                <button class="accordion-button">Manipulação do Documento</button>
+                <div class="accordion-content">
+                    <p>Acesse e modifique elementos HTML e CSS usando o Document Object Model (DOM) para criar
+                        interações com o usuário.</p>
+                </div>
+                <button class="accordion-button">Tratamento de Eventos</button>
+                <div class="accordion-content">
+                    <p>Aprenda como usar eventos para responder a ações do usuário, como cliques e teclas pressionadas,
+                        tornando a página mais dinâmica e responsiva.</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sequi vel optio quos, quis a cumque quibusdam enim
+                quas, consequuntur provident, praesentium illo ipsam.
+                Odit quisquam natus delectus quaerat
+                expedita eligendi.</p>
+            <div class="image-container">
+                <img src="./assets/img/img1.png" alt="Imagem 1">
+                <img src="./assets/img/img2.jpg" alt="Imagem 2">
+                <img src="./assets/img/img3.jpg" alt="Imagem 3">
+                <img src="./assets/img/img1.png" alt="Imagem 4">
+                <img src="./assets/img/img2.jpg" alt="Imagem 5">
+                <img src="./assets/img/img3.jpg" alt="Imagem 6">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Seção 6: Mapa de Localização e Formulário "Fale Conosco" -->
+    <section id="section6">
+        <div class="content">
+            <h2>Localização</h2>
+            <h2>Mapa de Localização</h2>
+            <div id="map">
+                <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.145616501733!2d-47.892729824064205!3d-15.796274023002963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ae665464fb7%3A0x29d89d9adf83e13f!2sSenac%20Jess%C3%A9%20Freire%20(DF)!5e0!3m2!1spt-BR!2sbr!4v1698099159704!5m2!1spt-BR!2sbr"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="content">
+            <h2>Fale Conosco</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <section id="section7">
+        <div class="content">
+            <h2>Carrossel de Imagens</h2>
+            <div class="image-carousel">
+                <div><img src="./assets/img/img3.jpg" alt="Imagem 1"></div>
+                <div><img src="./assets/img/img3.jpg" alt="Imagem 2"></div>
+                <div><img src="./assets/img/img3.jpg" alt="Imagem 3"></div>
+                <div><img src="./assets/img/img3.jpg" alt="Imagem 4"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="rodape">
+            <center>
+                <p>Template criado por <b>@badmask_84</b></p>
+            </center>
+        </div>
+
+    </footer>
+</body>
+
+</html>

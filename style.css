@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* Adicionado para posicionar o botão no canto inferior direito */
+}
+
+/* Estilos de tema claro */
+body.light-theme {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Estilos de tema escuro */
+body.dark-theme {
+    background-color: #000000;
+    color: #fff;
+    background-image: none;
+}
+
+/* Estilo do botão tema */
+
+.tema {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 16px;
+    padding: 6px;
+    border-radius: 20px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(101, 84, 203) 50%, rgb(0, 0, 0) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+}
+
+.tema:hover {
+    background: #000000;
+}
+
+.tema:active {
+    background: #424443;
+}
+/* Fim botão tema */
+
+
+/* Botão para retornar ao menu */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    /* Cor de fundo para o tema escuro */
+    color: #fff;
+    /* Cor de texto para o tema escuro */
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display:inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para cada seção */
+section {
+    padding: 50px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.image-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    max-width: 30%;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .image-container img {
+        max-width: 35%;
+    }
+}
+
+/* início função accordion */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width:auto;
+}
+
+.accordion-button {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: solid 1px;
+    border-color: #222121;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #2f2e2e;
+}
+.accordion-content p{
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.accordion-button.active + .accordion-content {
+    display: block;
+}
+/* fim função accordion */
+
+/* Campo de pesquisa */
+#search-container {
+    position:static;
+    top: 120px;
+    right: 15px;
+    display: flex;
+}
+
+#search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    padding: 8px 8px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+/* Fim campo de pesquisa*/
+
+#contact-form{
+    margin-top: 40px;
+    
+}
+
+
+
+
+
+/* inicio footer */
+.rodape{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    font-size: 10px;
+    color:#ffffff;
+    background-color: #333;
+    text-align: center;
+  }
+
+/* fim footer */
+
+/* inicio carrossel */
+
+.image-carousel {
+    width: 100%;
+}
+
+.image-carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* fim carrossel */
